@@ -32,10 +32,10 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     <li><a href="#" class="hover-link navigation-link">Pricing</a></li>
                     <li><a href="#" class="hover-link navigation-link">Resources</a></li>
                     <li><a href="#" class="hover-link navigation-link primary-btn">Sign in</a></li>
-                    <li><a href="#" class="hover-link navigation-link secondary-btn">Sign up</a></li>
+                    <li><a href="#" class="hover-link navigation-link secondary-btn signupbtn">Sign up</a></li>
                 </ul>
-                <input type="checkbox" id="check">
-                <div class="hover-link bar"><label for="check"><i class="fa-solid fa-bars" id="bar"></i></label></div>
+                <div class="hover-link bar"><i class="fa-solid fa-bars" id="bar"></i></div>
+                <div class="hover-link bar"><i class="fa-solid fa-close" id="close"></i></div>
             </div>
         </div>
     </nav>
@@ -216,6 +216,23 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </div>
     </div>
     
+
+    <script>
+        let menu = document.querySelector(".nav-link");
+        let menuBtn = document.getElementById("bar"); 
+        let closeBtn = document.getElementById("close");
+        
+        menuBtn.addEventListener("click",()=>{
+            menu.style.top = "50px";
+            menuBtn.style.display = "none";
+            closeBtn.style.display = "block";
+        })
+        closeBtn.addEventListener("click",()=>{
+            menu.style.top = "-500px";
+            menuBtn.style.display = "block";
+            closeBtn.style.display = "none";
+        })
+    </script>
     
 </body>
 </html>

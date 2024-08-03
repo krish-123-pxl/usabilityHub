@@ -46,9 +46,6 @@ ul{
     position: relative;
 
 }
-#check{
-    display: none;
-}
 .nav{
     justify-content: space-between;
     padding-block: 10px;
@@ -56,9 +53,14 @@ ul{
 .nav-link{
     width: 700px;
     justify-content: end;
+    transition: .2s;
     gap: 35px;
 }
 .bar{
+    display: none;
+    font-size: 1.4rem;
+}
+#close{
     display: none;
 }
 .hover-link{

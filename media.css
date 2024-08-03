@@ -1,14 +1,23 @@
 @media screen and (max-width:992px) {
     .nav-link{
         position: absolute;
-        top: 100%;
-        left: 0;
+        background-color: rgba(26, 24, 24, 0.749);
+        width: 100%;
         flex-direction: column;
-        background-color: red;
-        display: none;
+        gap: 10px;
+        top:-500px;
+        left: 0;
+        padding-block: 20px;
+    }
+    .nav-link li{
+        padding-block: 10px;
+    }
+    .nav-link li a{
+        color: white;
     }
     .bar{
         display: initial;
+        cursor: pointer;
     }
     .nav{
         padding-inline: 20px;
@@ -17,6 +26,9 @@
 }
 
 @media (max-width:768px) {
+    .signupbtn{
+        display: none;
+    }
     .card-box{
         width: 48%;
     }
